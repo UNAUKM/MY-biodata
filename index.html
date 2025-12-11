@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Biodata</title>
+
+  <style>
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:Arial,Helvetica,sans-serif;background:#ECC5C0;color:#7F5A58;line-height:1.6}
+    header{background:linear-gradient(#915F6D,#FFCCCB,#FBCFCD);color:#fff;padding:40px 20px;text-align:center;animation:fadeDown .8s ease}
+    header h1{font-size:38px;margin-bottom:10px}
+    header p{font-size:18px;opacity:.9}
+    nav{display:flex;justify-content:center;gap:20px;background:#6F4E37;padding:14px 0;position:sticky;top:0;z-index:999}
+    nav a{color:#FEFCFF;text-decoration:none;font-weight:bold;padding:8px 16px;border-radius:6px;transition:.3s}
+    nav a:hover, nav a.active{background:#7F5A58}
+    .container{max-width:1000px;margin:30px auto;padding:0 20px}
+    section{display:none;animation:fade .5s ease}
+    section.active{display:block}
+    .card{background:#fff;border-radius:14px;padding:25px;margin-bottom:25px;box-shadow:0 4px 15px rgba(0,0,0,0.08);animation:floatUp .7s ease}
+    .photo{width:100%;max-height:420px;object-fit:cover;border-radius:14px;margin-bottom:16px;box-shadow:0 3px 15px rgba(0,0,0,0.2)}
+    ul{padding-left:20px;margin-top:10px}
+    li{margin-bottom:8px}
+    video, iframe{width:100%;border-radius:10px;box-shadow:0 3px 15px rgba(0,0,0,0.2)}
+    @keyframes fade{from{opacity:0}to{opacity:1}}
+    @keyframes fadeDown{from{opacity:0;transform:translateY(-20px)}to{opacity:1;transform:translateY(0)}}
+    @keyframes floatUp{from{opacity:0;transform:translateY(15px)}to{opacity:1;transform:translateY(0)}}
+    footer{text-align:center;padding:20px 0;color:#7F5A58;margin-top:30px}footer a{color:#7F5A58;text-decoration:none}
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>My Biodata</h1>
+  <p>My education,skills, achievements & experiences in one place</p>
+</header>
+
+<nav>
+  <a href="#home" data-page="home" class="active">Home</a>
+  <a href="#education" data-page="education">Education</a>
+  <a href="#skills" data-page="skills">Skills</a>
+  <a href="#achievement" data-page="achievement">Achievement</a>
+  <a href="#experience" data-page="experience">Experience</a>
+</nav>
+
+<div class="container">
+
+ <!-- HOME PAGE -->
+<section id="home" class="active">
+  <div class="card">
+    <h2>Hi, My name is NAZATUL HUSNA</h2>
+    <p>Welcome to my biodata! This is where I share my journey, education, skills, achievements, and experiences.</p>
+
+    <!-- Main Image -->
+    <img src="me.jpg" alt="Your Photo" class="photo" />
+
+    <!-- Intro Video -->
+    <div class="video-box" style="margin-top:15px">
+      <h3>Intro Video</h3>
+      <video controls>
+        <source src="video resume.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+
+    <!-- Link to blog -->
+    <p style="margin-top:10px;">Check out my blog: <a href="https://blogaboutmyselfinukm.blogspot.com/2025/11/3-tempat-kegemaran-saya-di-universiti.html" target="_blank">My Blog</a></p>
+  </div>
+</section>
+
+ <!-- EDUCATION -->
+<section id="education">
+  <div class="card">
+    <h2>Education</h2>
+    
+    <!-- Sekolah Menengah -->
+    <h3>Sekolah Menengah Kebangsaan Tun Perak (2019-2024)</h3>
+    <img src="sekolah menegah.jpg" alt="Sekolah Menengah" class="photo" />
+    <p>Grade: Scored 5As 4Bs in Sijil Pelajaran Malaysia (SPM).</p>
+    
+    <!-- Matriculation -->
+    <h3>Collage Matriculation Perak (2024/2025)</h3>
+    <img src="matrik.jpg" alt="Matriculation College" class="photo" />
+    <p>GPA: 3.96</p>
+    
+    <!-- University -->
+    <h3>
+      <a href="https://www.ukm.my/portalukm/ms/selamat-datang/" target="_blank">University Kebangsaan Malaysia</a> (2025-2028)
+    </h3>
+    <img src="u.jpg" alt="University Kebangsaan Malaysia" class="photo" />
+    <p>Bachelor of Business Administration with Honours</p>
+  </div>
+</section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="card">
+      <h2>Skills</h2>
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Flexible</li>
+        <li>Communication</li>
+        <li>Teamwork</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ACHIEVEMENTS -->
+<section id="achievement">
+  <div class="card">
+    <h2>Achievements</h2>
+    <ul>
+      <li>
+        Head Prefect (2023/2024) – Active in physical & mental activities, organized educational visit to a mushroom factory and trip to Taiping Museum, participated in sports.
+        <br>
+        <img src="sijill.jpg" alt="Head Prefect Certificate" class="photo" style="margin-top:8px;" />
+      </li>
+      <li>
+        Best Student Award – History subject in SPM 2023.
+        <br>
+        <img src="sijil.jpg" alt="Best Student Award History SPM 2023" class="photo" style="margin-top:8px;" />
+      </li>
+    </ul>
+  </div>
+</section>
+
+ <!-- EXPERIENCE -->
+<section id="experience">
+  <div class="card">
+    <h2>Leadership & Program Experience</h2>
+    <img src="entrepreneurship-day.jpg" alt="Entrepreneurship Day Program" class="photo" />
+    <ul>
+      <li>Chairperson – Entrepreneurship Day program during Matriculation. Strengthened leadership and communication skills.</li>
+      <li>Head Prefect activities – organized educational visits to a mushroom factory and trip to Taiping Museum, participated in sports.</li>
+    </ul>
+  </div>
+</section>
+
+</div>
+
+<footer>
+  © 2025 My Biodata • Designed by NAZATUL HUSNA
+</footer>
+
+<script>
+  const navLinks = document.querySelectorAll('nav a');
+  const pages = document.querySelectorAll('section');
+  function showPage(id){
+    pages.forEach(p=>p.classList.toggle('active', p.id===id));
+    navLinks.forEach(a=>a.classList.toggle('active', a.dataset.page===id));
+    history.replaceState(null,'','#'+id);
+  }
+  navLinks.forEach(a=>{
+    a.addEventListener('click', e=>{
+      e.preventDefault(); showPage(a.dataset.page);
+    });
+  });
+  const hash = location.hash.replace('#','') || 'home';
+  if(document.getElementById(hash)) showPage(hash);
+</script>
+
+</body>
+</html>
